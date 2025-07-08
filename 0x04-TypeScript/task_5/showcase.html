@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Showcase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+</head>
+<body class="bg-gradient-to-br from-green-400 to-green-700 min-h-screen flex flex-col font-sans">
+
+  <!-- NAVIGATION -->
+  <nav class="bg-green-900 text-white px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Michael Muriungi</h1>
+    <ul class="flex space-x-6 text-lg font-medium">
+      <li><a href="index.html" class="hover:text-green-300">Home</a></li>
+      <li><a href="about.html" class="hover:text-green-300">About Us</a></li>
+      <li><a href="showcase.html" class="hover:text-green-300">Showcase</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="relative h-[40vh] w-full flex items-center justify-center overflow-hidden">
+    <img 
+      src="./images/hero-bg.jpg" 
+      alt="Hero Background" 
+      class="absolute inset-0 w-full h-full object-cover"
+    />
+    <div class="relative text-center px-4">
+      <h1 class="text-5xl font-extrabold text-white drop-shadow-lg">Showcase</h1>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow py-12 px-6 max-w-7xl mx-auto">
+    <p class="text-center text-white text-lg mb-10">
+      Explore some of our creative work and projects below!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- IMAGE CARD -->
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+        <a href="./images/showcase1.jpg" data-lightbox="gallery" data-title="Creative Dashboard Design">
+          <img src="./images/showcase1.jpg" alt="Showcase 1" class="w-full object-cover" />
+        </a>
+        <div class="p-4 text-center text-green-900 font-medium">
+          Creative Dashboard Design
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+        <a href="./images/showcase2.jpg" data-lightbox="gallery" data-title="Modern UI Kit Sample">
+          <img src="./images/showcase2.jpg" alt="Showcase 2" class="w-full object-cover" />
+        </a>
+        <div class="p-4 text-center text-green-900 font-medium">
+          Modern UI Kit Sample
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+        <a href="./images/showcase3.jpg" data-lightbox="gallery" data-title="Team Collaboration Tool">
+          <img src="./images/showcase3.jpg" alt="Showcase 3" class="w-full object-cover" />
+        </a>
+        <div class="p-4 text-center text-green-900 font-medium">
+          Team Collaboration Tool
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+        <a href="./images/showcase4.jpg" data-lightbox="gallery" data-title="Mobile App Interface">
+          <img src="./images/showcase4.jpg" alt="Showcase 4" class="w-full object-cover" />
+        </a>
+        <div class="p-4 text-center text-green-900 font-medium">
+          Mobile App Interface
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+        <a href="./images/showcase5.jpg" data-lightbox="gallery" data-title="Custom Web Form Layout">
+          <img src="./images/showcase5.jpg" alt="Showcase 5" class="w-full object-cover" />
+        </a>
+        <div class="p-4 text-center text-green-900 font-medium">
+          Custom Web Form Layout
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+        <a href="./images/showcase6.jpg" data-lightbox="gallery" data-title="Dynamic Chart Visualization">
+          <img src="./images/showcase6.jpg" alt="Showcase 6" class="w-full object-cover" />
+        </a>
+        <div class="p-4 text-center text-green-900 font-medium">
+          Dynamic Chart Visualization
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-green-900 text-white py-6 text-center">
+    &copy; 2025 Michael Muriungi. All rights reserved.
+  </footer>
+
+  <!-- Lightbox2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+</body>
+</html>
