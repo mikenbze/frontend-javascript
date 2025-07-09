@@ -1,10 +1,22 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
+/**
+ * Declare the lightbox property on the global window object.
+ */
+declare global {
+  interface Window {
+    lightbox: {
+      option(options: {
+        resizeDuration?: number;
+        wrapAround?: boolean;
+      }): void;
+    };
+  }
+}
+
 export default function Showcase() {
   useEffect(() => {
-    // This makes sure Lightbox2 initializes when the component mounts
-    // @ts-ignore
     if (window.lightbox) {
       window.lightbox.option({
         resizeDuration: 200,
