@@ -10,6 +10,10 @@ declare global {
       option(options: {
         resizeDuration?: number;
         wrapAround?: boolean;
+        fadeDuration?: number;
+        imageFadeDuration?: number;
+        maxWidth?: number;
+        maxHeight?: number;
       }): void;
     };
   }
@@ -21,6 +25,10 @@ export default function Showcase() {
       window.lightbox.option({
         resizeDuration: 200,
         wrapAround: true,
+        fadeDuration: 300,
+        imageFadeDuration: 300,
+        maxWidth: 800,
+        maxHeight: 600,
       });
     }
   }, []);
@@ -100,7 +108,7 @@ export default function Showcase() {
           {projects.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl overflow-hidden shadow-lg"
+              className="bg-white rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105"
             >
               <a
                 href={item.src}
@@ -110,7 +118,7 @@ export default function Showcase() {
                 <img
                   src={item.src}
                   alt={item.title}
-                  className="w-full object-cover"
+                  className="w-full h-64 object-cover"
                 />
               </a>
               <div className="p-4 text-center text-green-900 font-medium">
